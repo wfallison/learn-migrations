@@ -1,3 +1,6 @@
+//Create a table todo with an Id, and a text column
+
+
 /**
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
