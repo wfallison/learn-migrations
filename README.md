@@ -14,6 +14,9 @@ https://dev.to/easybuoy/setting-up-a-node-api-with-postgres-and-knex-588f
 
 1. Run `sh runPostgres.sh` to startup the docker container / postgres db server
 2. Following the instructions from the guide linked above...
+  - Run `knex migrate:make <versionNumber>` to create a new migration file
+    - Migrate scripts expect a promise to be returned
+    - Name each migration based on a versionNumber we are using? tbd
   - Run `knex migrate:latest` to apply the schema changes
   - Run `knex seed:run` to insert any seed data
 
